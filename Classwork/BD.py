@@ -61,33 +61,33 @@
 # connection.close()
 
  
-# Задача 2.abs
+Задача 2.abs
 
-# import sqlite3
+import sqlite3
 
-# def get_connection():
-#     connection = sqlite3.connect('teachers.db')
-#     return connection
+def get_connection():
+    connection = sqlite3.connect('teachers.db')
+    return connection
 
-# def close_connection(connection):
-#     if connection:
-#         connection.close()   
+def close_connection(connection):
+    if connection:
+        connection.close()   
 
-# def read_database_version():
-#     try:
-#         connection = get_connection()
-#         cursor = connection.cursor()
-#         cursor.execute('SELECT sqlite_version();') 
-#         version = cursor.fetchone()
-#         print(version)
-#         close_connection(connection)
-#         print('Вы подключились к версии Sqlite: ', version)
-#     except (Exception, sqlite3.Error) as error:
-#         print ('Ошибка в получении данных', error)
+def read_database_version():
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute('SELECT sqlite_version();') 
+        version = cursor.fetchone()
+        print(version)
+        close_connection(connection)
+        print('Вы подключились к версии Sqlite: ', version)
+    except (Exception, sqlite3.Error) as error:
+        print ('Ошибка в получении данных', error)
 
-# read_database_version()     
+read_database_version()     
 
-# Задача 3. У всех учителей должен появиться опыт работы взначении integer
+Задача 3. У всех учителей должен появиться опыт работы взначении integer
 
 import sqlite3
 
