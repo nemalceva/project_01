@@ -61,7 +61,7 @@
 # connection.close()
 
  
-Задача 2.abs
+# Задача 2.abs
 
 import sqlite3
 
@@ -87,7 +87,7 @@ def read_database_version():
 
 read_database_version()     
 
-Задача 3. У всех учителей должен появиться опыт работы взначении integer
+# Задача 3. У всех учителей должен появиться опыт работы взначении integer
 
 import sqlite3
 
