@@ -8,4 +8,10 @@
 # Использовать условный оператор if-elif-else нельзя!
 
 def switch_it_up(number):
-    pass
+    nums_words = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', \
+            6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 0: 'Zero'}   
+    try:
+        print (f"Вы ввели {number} - {nums_words[number]}.")
+    except KeyError:
+        print ('Вы ввели не верное число.')                 
+switch_it_up(int(input("Введите число от 0 до 9.")))        
