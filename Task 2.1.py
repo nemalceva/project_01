@@ -14,8 +14,6 @@
 
 nums = [4323,97876,54564,88675,231231,667556,231324,785676,908097,8789,2332,677767,897897]
 def minimum(arr):
-    
-
     min_num = nums[0]
     for arr in nums:
         if min_num > arr:
