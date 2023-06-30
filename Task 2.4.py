@@ -44,13 +44,12 @@ remove_last_em("Hi!!!")
 # remove("Hi! !Hi! Hi!") === "!Hi!"
 
 def remove_word_with_one_em(s):
-    greeting ="Hi! !Hi! !Hi! Hi! Hi! !Hi! !Hi! Hi! Hi!!"
-    #greeting=list(greeting)
+    greeting ="Hi! !Hi! !Hi! Hi! Hi! !Hi! !Hi! Hi! Hi!! Hi! Hi!!!!"
     new_greeting = greeting.split(" ")
-    
+    result = []
     for k in new_greeting:
-        if k.count("!")==1 in new_greeting:
-            new_greeting.remove(k)
-        
-    print(new_greeting)
-remove_word_with_one_em("Hi! !Hi! !Hi! Hi! Hi! !Hi! !Hi! Hi! Hi!!")  
+      if k.count("!")!=1:
+        result.append(k)
+    print(" ".join(result))
+
+remove_word_with_one_em("Hi! !Hi! !Hi! Hi! Hi! !Hi! !Hi! Hi! Hi!! Hi! Hi!") 
