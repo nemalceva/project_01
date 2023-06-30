@@ -12,21 +12,22 @@
 
 # Решение:
 
-def minimum(arr):
-    print('min = ', min_num)
-
 nums = [4323,97876,54564,88675,231231,667556,231324,785676,908097,8789,2332,677767,897897]
-min_num = nums[0]
-for arr in nums:
-    if min_num > arr:
-        min_num = arr
+def minimum(arr):
     
+
+    min_num = nums[0]
+    for arr in nums:
+        if min_num > arr:
+            min_num = arr
+    print('min = ', min_num)
+minimum(nums)
+
 def maximum (arr):
+    max_num = nums[0]
+    for arr in nums:
+        if max_num < arr:
+            max_num = arr
     print('max = ',max_num)
-   
-max_num = nums[0]
-for arr in nums:
-    if max_num < arr:
-        max_num = arr
-minimum(min_num)
-maximum(max_num)
+
+maximum(nums)
